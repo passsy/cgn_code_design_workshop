@@ -32,4 +32,9 @@ public class ChildItemPagerAdapter extends PagerAdapter {
     @Override
     public void destroyItem(final ViewGroup container, final int position, final Object object) {
     }
+
+    @Override
+    public float getPageWidth(final int position) {
+        return super.getPageWidth(position) * 0.8f;
+    }
 }
